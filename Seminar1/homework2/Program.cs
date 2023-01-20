@@ -7,6 +7,7 @@
 //Вариант с вводом данных через консоль
 Console.WriteLine("Вариант с вводом данных через консоль");
 // --------
+Console.WriteLine("-------");
 Console.Write("Введите число A:  ");
 string A_num = Console.ReadLine();
 int A = Convert.ToInt32(A_num);
@@ -28,6 +29,7 @@ Console.WriteLine($"Max = {max}");
 Console.WriteLine("Варианты с известными данными в переменных.");
 // Варианты с известными данными в переменных.
 // 1  - 2, 3, 7 -> 7
+Console.WriteLine("-------");
 Console.WriteLine("Пример №1");
 int aa = 2;
 int bb = 3;
@@ -39,7 +41,7 @@ Console.WriteLine($"Max = {max1}");
 
 // Дальше простая копипаста
 // 2 - 44 5 78 -> 78
-
+Console.WriteLine("-------");
 Console.WriteLine("Пример №2");
 int aaa = 44;
 int bbb = 5;
@@ -50,7 +52,7 @@ if (ccc > max2) {max2 = ccc;}
 Console.WriteLine($"Max = {max2}");
 
 // 3 - 22 3 9 -> 22
-
+Console.WriteLine("-------");
 Console.WriteLine("Пример №3");
 int aaaa = 22;
 int bbbb = 3;
