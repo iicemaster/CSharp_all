@@ -1,0 +1,15 @@
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.csproj.AssemblyReference.cache
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.AssemblyInfoInputs.cache
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.AssemblyInfo.cs
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.csproj.CoreCompileInputs.cache
+C:\GitEducation\CSharp_all\Seminar1\homework4\bin\Debug\net7.0\homework4.exe
+C:\GitEducation\CSharp_all\Seminar1\homework4\bin\Debug\net7.0\homework4.deps.json
+C:\GitEducation\CSharp_all\Seminar1\homework4\bin\Debug\net7.0\homework4.runtimeconfig.json
+C:\GitEducation\CSharp_all\Seminar1\homework4\bin\Debug\net7.0\homework4.dll
+C:\GitEducation\CSharp_all\Seminar1\homework4\bin\Debug\net7.0\homework4.pdb
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.dll
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\refint\homework4.dll
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.pdb
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\homework4.genruntimeconfig.cache
+C:\GitEducation\CSharp_all\Seminar1\homework4\obj\Debug\net7.0\ref\homework4.dll

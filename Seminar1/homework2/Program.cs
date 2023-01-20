@@ -25,7 +25,7 @@ if (A > max) {max = A;}
 if (B > max) {max = B;}
 if (C > max) {max = C;}
 Console.WriteLine($"Max = {max}");
-
+Console.WriteLine("-------");
 Console.WriteLine("Варианты с известными данными в переменных.");
 // Варианты с известными данными в переменных.
 // 1  - 2, 3, 7 -> 7
