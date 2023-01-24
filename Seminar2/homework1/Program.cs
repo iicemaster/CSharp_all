@@ -16,6 +16,7 @@ for (i = 0; i < L; i++)
 }
 Console.WriteLine($"Всего символов: {L}");
 
+Console.WriteLine("Вариант с заранее известным числом");
 Console.WriteLine("---------");
 Console.WriteLine("Задание №1");
 string A_num1 = "456";
