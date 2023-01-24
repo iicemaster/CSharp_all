@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework1\\homework1.csproj",
-      "projectName": "homework1",
-      "projectPath": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework1\\homework1.csproj",
+      "projectUniqueName": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework3\\homework3.csproj",
+      "projectName": "homework3",
+      "projectPath": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework3\\homework3.csproj",
       "packagesPath": "C:\\Users\\IIcem\\.nuget\\packages\\",
-      "outputPath": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework1\\obj\\",
+      "outputPath": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IIcem\\AppData\\Roaming\\NuGet\\NuGet.Config"

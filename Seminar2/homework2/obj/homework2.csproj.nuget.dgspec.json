@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework2\\homework2.csproj": {}
+    "C:\\GitEducation\\CSharp_all\\Seminar2\\homework2\\homework2.csproj": {}
   },
   "projects": {
-    "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework2\\homework2.csproj": {
+    "C:\\GitEducation\\CSharp_all\\Seminar2\\homework2\\homework2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework2\\homework2.csproj",
+        "projectUniqueName": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework2\\homework2.csproj",
         "projectName": "homework2",
-        "projectPath": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework2\\homework2.csproj",
+        "projectPath": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework2\\homework2.csproj",
         "packagesPath": "C:\\Users\\IIcem\\.nuget\\packages\\",
-        "outputPath": "C:\\GitEducation\\CSharp_all\\Seminar1\\Seminar2\\homework2\\obj\\",
+        "outputPath": "C:\\GitEducation\\CSharp_all\\Seminar2\\homework2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IIcem\\AppData\\Roaming\\NuGet\\NuGet.Config"
