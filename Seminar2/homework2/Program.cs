@@ -19,8 +19,8 @@ if (L>=3)
    }
 }
 else {Console.WriteLine($"Третьей цифры нет. Всего символов: {L}");}
-
-Console.WriteLine("Вариант с заранее известным числом");
+Console.WriteLine("#########");
+Console.WriteLine("Варианты с заранее известным числом");
 Console.WriteLine("---------");
 Console.WriteLine("Задание №1");
 string A_num1 = "645";
