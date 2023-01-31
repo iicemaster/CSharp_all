@@ -13,7 +13,7 @@ for (i=0, count=0; i<length; i++)
 {
     numbers[i] = rnd.Next(100, 999);
     Console.Write($"{numbers[i]} ");
-    if (numbers[i] % 2==1) // проверка на чётность
+    if (numbers[i] % 2!=1) // проверка на чётность
     {count+=1;}
 }
 //Console.WriteLine("");
