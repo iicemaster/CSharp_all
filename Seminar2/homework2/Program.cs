@@ -7,18 +7,18 @@
 Console.WriteLine("Вариант с обработкой данных от пользователя");
 Console.WriteLine("---------");
 Console.Write("Введите число: "); 
-string A_num = Console.ReadLine();
+string a_num = Console.ReadLine();
 // int A = Convert.ToInt32(A_num);  - Конвертация не обязательна т.к. не происходит никаких вычислений.
-int L = A_num.Length;
 int i;
-if (L>=3)
+if (a_num.Length>=3)
 {
-   for (i = 0; i < L; i++)
+   for (i = 0; i < a_num.Length; i++)
    {
-       if (i == 2) {Console.WriteLine($"Третий символ: {A_num[i]}. Всего символов: {L}");}
+       if (i == 2) {Console.WriteLine($"Третий символ: {a_num[i]}. Всего символов: {a_num.Length}");}
    }
 }
-else {Console.WriteLine($"Третьей цифры нет. Всего символов: {L}");}
+else {Console.WriteLine($"Третьей цифры нет. Всего символов: {a_num.Length}");}
+
 Console.WriteLine("#########");
 Console.WriteLine("Варианты с заранее известным числом");
 Console.WriteLine("---------");

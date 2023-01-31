@@ -19,6 +19,7 @@ for (i = 0; i<=N-1; i++, n--)
  if (text == n_reverse){Console.WriteLine("Является палиндромом");}
  else {Console.WriteLine("Не является палиндромом");}
 
+
 // ВАРИАНТ С ИСПОЛЬЗОВАНИЕМ МЕТОДА Reverse();
 Console.WriteLine("-------");
 Console.WriteLine("Второй вариант, более короткий и без цикла.");
