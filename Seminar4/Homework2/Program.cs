@@ -10,5 +10,5 @@ int i, temp;
 for (i=0, temp=0; i<=text.Length-1; i++)
      {
         temp = temp + (int.Parse(text[i].ToString()));
-     } // Пузырьковым методом по 1 символу переносим данные
+     } 
 Console.WriteLine($"Результат: {temp}");
