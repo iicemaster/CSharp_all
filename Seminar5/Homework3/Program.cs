@@ -30,4 +30,3 @@ for (int i=0; i<length; i++)
 
 Console.WriteLine("\n-------");
 Console.WriteLine($"Max = {max} \nMin = {min}  \nРазница между Min и Max значениями массива = {max-min} ");
-// Max - min = result = print
