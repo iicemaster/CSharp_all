@@ -1,0 +1,15 @@
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.csproj.AssemblyReference.cache
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.AssemblyInfoInputs.cache
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.AssemblyInfo.cs
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.csproj.CoreCompileInputs.cache
+C:\GitEducation\CSharp_all\Lection2\bin\Debug\net7.0\Lection2.exe
+C:\GitEducation\CSharp_all\Lection2\bin\Debug\net7.0\Lection2.deps.json
+C:\GitEducation\CSharp_all\Lection2\bin\Debug\net7.0\Lection2.runtimeconfig.json
+C:\GitEducation\CSharp_all\Lection2\bin\Debug\net7.0\Lection2.dll
+C:\GitEducation\CSharp_all\Lection2\bin\Debug\net7.0\Lection2.pdb
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.dll
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\refint\Lection2.dll
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.pdb
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\Lection2.genruntimeconfig.cache
+C:\GitEducation\CSharp_all\Lection2\obj\Debug\net7.0\ref\Lection2.dll

@@ -34,7 +34,7 @@ for (i=0, ii=0; ii<10; i++)
         numbers[i, ii] = Convert.ToDouble(rand_num.ToString("0.00"));
         if (i==(10-1))
         {
-            //Console.WriteLine($"{numbers[i, ii]}  ");
+           //Console.WriteLine($"{numbers[i, ii]}  ");
         }
         else
         {
@@ -44,7 +44,7 @@ for (i=0, ii=0; ii<10; i++)
 }
 if ((Convert.ToInt32(adress[0]) <10) || (Convert.ToInt32(adress[1])<10))
 {
-    Console.Write($"{numbers[(Convert.ToInt32(adress[0])), (Convert.ToInt32(adress[1]))]}  ");
+    Console.Write($" жмых{numbers[(Convert.ToInt32(adress[0])), (Convert.ToInt32(adress[1]))]}  ");
 }
 else 
 {
