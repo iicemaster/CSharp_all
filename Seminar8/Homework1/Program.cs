@@ -68,7 +68,7 @@ int[,] SortMatrix(int[,] matrix)
         {
             for (int j = 1; j < matrix.GetLength(1); j++)
             {
-                if (matrix[i, j] < matrix[i, j - 1])
+                if (matrix[i, j] > matrix[i, j - 1])
                 {
                     (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
                 }
