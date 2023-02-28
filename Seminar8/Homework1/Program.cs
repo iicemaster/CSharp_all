@@ -8,6 +8,7 @@
 // 9 5 3 2
 // 8 4 4 2
 
+int max, min;
 
 // Метод получения данных из консоли формата int32
 int ConsoleImport()
@@ -51,13 +52,13 @@ int[,] FillMatrix(int[,] matrix)
 
 int [,] SortMatrix(int[,] matrix)
 {
-    int max, min;
     for (int i = 0; i < matrix.GetLength(0); i++)
-    max = 0;
-    min = 99;
+    //max = 0;
+    //min = 99;
     {
         for (int j = 1; j < matrix.GetLength(1); j++)
         {
+               
             if (matrix[i, j] < matrix[i, j - 1])
             {
                 (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
