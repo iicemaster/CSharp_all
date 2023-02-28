@@ -8,6 +8,16 @@
 // 9 5 3 2
 // 8 4 4 2
 
+// Тело задания
+Console.Write("Введите количество столбцов(x): ");
+int columns = ConsoleImport();
+Console.WriteLine();
+Console.Write("Введите количество строк(y): ");
+int rows = ConsoleImport();
+Console.WriteLine();
+int[,] result = PrintMatrix(SortMatrix(FillMatrix(CreateMatrix(columns, rows))));
+
+
 // Метод получения данных из консоли формата int32
 int ConsoleImport()
 {
@@ -29,8 +39,8 @@ int[,] CreateMatrix(int columns, int rows)
     int[,] matrix = new int[rows, columns];
     return matrix;
 }
+
 // Метод заполнения двумерной матрицы
-//
 int[,] FillMatrix(int[,] matrix)
 {
     Random rnd = new Random();
@@ -47,18 +57,7 @@ int[,] FillMatrix(int[,] matrix)
     }
     return matrix;
 }
-
-
-Console.Write("Введите количество столбцов(x): ");
-int columns = ConsoleImport();
-Console.WriteLine();
-Console.Write("Введите количество строк(y): ");
-int rows = ConsoleImport();
-Console.WriteLine();
-//Console.WriteLine($"Ваше число x: {x}, y: {y}");
-int[,] result = PrintMatrix(SortMatrix(FillMatrix(CreateMatrix(columns, rows))));
-
-
+// Метод сортировки двумерной матрицы
 int[,] SortMatrix(int[,] matrix)
 {
     Console.WriteLine();
@@ -72,17 +71,13 @@ int[,] SortMatrix(int[,] matrix)
                 {
                     (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
                 }
-               // Console.Write($"{matrix[i, j]} "); //отладка, удалится в конце
+               
             }
-            //Console.WriteLine(); //отладка, удалится в конце
-
-        }
-        
+        }   
     }
     return matrix;
 }
-
-
+// Метод печати двумерной матрицы
 int [,] PrintMatrix(int[,] matrix)
 {
 for (int i = 0; i < matrix.GetLength(0); i++)
