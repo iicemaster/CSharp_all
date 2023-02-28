@@ -25,46 +25,63 @@ int ConsoleImport()
 }
 
 // Метод создания двумерной матрицы
-int[,] CreateMatrix(int x, int y)
+int[,] CreateMatrix(int columns, int rows)
 {
-    int[,] matrix = new int[x, y];
+    int[,] matrix = new int[rows, columns];
     return matrix;
 }
 // Метод заполнения двумерной матрицы
 //
-int[,] FillMatrix(int[,] matrix, int x, int y)
+int[,] FillMatrix(int[,] matrix)
 {
     Random rnd = new Random();
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j<y; j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix [i,j] = rnd.Next(1, 10);
-            Console.Write($"{matrix[i,j]} ");
-            Thread.Sleep(500);
+            matrix[i, j] = rnd.Next(1, 10);
+            Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
         }
         Console.WriteLine();
-        Thread.Sleep(500);
+        Thread.Sleep(100);
     }
-return matrix;
+    return matrix;
 }
 
-// int SortMatrix()
-// {
-// }
+int [,] SortMatrix(int[,] matrix)
+{
+    int max, min;
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    max = 0;
+    min = 99;
+    {
+        for (int j = 1; j < matrix.GetLength(1); j++)
+        {
+            if (matrix[i, j] < matrix[i, j - 1])
+            {
+                (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
+            }
+            Console.Write($"{matrix[i, j]} ");
+        }
+        Console.WriteLine();
+
+    }
+    return matrix;
+}
 
 
 
 Console.Write("Введите количество столбцов(x): ");
-int x = ConsoleImport();
+int columns = ConsoleImport();
 Console.WriteLine();
 Console.Write("Введите количество строк(y): ");
-int y = ConsoleImport();
+int rows = ConsoleImport();
 Console.WriteLine();
 //Console.WriteLine($"Ваше число x: {x}, y: {y}");
 
 
 
-int[,] anal = FillMatrix(CreateMatrix(x, y), x, y);
-
+//int[,] anal = FillMatrix(CreateMatrix(columns, rows));
+int[,] anal = SortMatrix(FillMatrix(CreateMatrix(columns, rows)));
 //Console.WriteLine(anal[7, 7]);
