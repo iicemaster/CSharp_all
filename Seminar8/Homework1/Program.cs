@@ -81,7 +81,4 @@ Console.WriteLine();
 //Console.WriteLine($"Ваше число x: {x}, y: {y}");
 
 
-
-//int[,] anal = FillMatrix(CreateMatrix(columns, rows));
-int[,] anal = SortMatrix(FillMatrix(CreateMatrix(columns, rows)));
-//Console.WriteLine(anal[7, 7]);
+int[,] result = SortMatrix(FillMatrix(CreateMatrix(columns, rows)));
