@@ -48,28 +48,6 @@ int[,] FillMatrix(int[,] matrix)
     return matrix;
 }
 
-int [,] SortMatrix(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-    int max = 0;
-    int min = 99;
-        for (int j = 1; j < matrix.GetLength(1); j++)
-        {
-               
-            if (matrix[i, j] < matrix[i, j - 1])
-            {
-                (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
-            }
-            Console.Write($"{matrix[i, j]} ");
-        }
-        Console.WriteLine();
-
-    }
-    return matrix;
-}
-
-
 
 Console.Write("Введите количество столбцов(x): ");
 int columns = ConsoleImport();
@@ -78,6 +56,30 @@ Console.Write("Введите количество строк(y): ");
 int rows = ConsoleImport();
 Console.WriteLine();
 //Console.WriteLine($"Ваше число x: {x}, y: {y}");
-
-
 int[,] result = SortMatrix(FillMatrix(CreateMatrix(columns, rows)));
+
+
+int[,] SortMatrix(int[,] matrix)
+{
+    Console.WriteLine();
+    for (int count = 0; count < columns; count++)
+    {
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 1; j < matrix.GetLength(1); j++)
+            {
+                if (matrix[i, j] < matrix[i, j - 1])
+                {
+                    (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
+                }
+                Console.Write($"{matrix[i, j]} ");
+            }
+            Console.WriteLine();
+
+        }
+        
+    }
+    return matrix;
+}
+
+
