@@ -1,0 +1,15 @@
+C:\GitEducation\CSharp_all\Seminar8\Homework3\bin\Debug\net7.0\Homework3.exe
+C:\GitEducation\CSharp_all\Seminar8\Homework3\bin\Debug\net7.0\Homework3.deps.json
+C:\GitEducation\CSharp_all\Seminar8\Homework3\bin\Debug\net7.0\Homework3.runtimeconfig.json
+C:\GitEducation\CSharp_all\Seminar8\Homework3\bin\Debug\net7.0\Homework3.dll
+C:\GitEducation\CSharp_all\Seminar8\Homework3\bin\Debug\net7.0\Homework3.pdb
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.csproj.AssemblyReference.cache
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.AssemblyInfoInputs.cache
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.AssemblyInfo.cs
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.csproj.CoreCompileInputs.cache
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.dll
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\refint\Homework3.dll
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.pdb
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\Homework3.genruntimeconfig.cache
+C:\GitEducation\CSharp_all\Seminar8\Homework3\obj\Debug\net7.0\ref\Homework3.dll
