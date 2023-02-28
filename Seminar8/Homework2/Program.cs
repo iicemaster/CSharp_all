@@ -7,8 +7,39 @@
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+int sumLine = 0;
+int max = 0;
+int columns = ConsoleImport("Введите количество столбцов(x): ");
+Console.WriteLine();
+int rows = ConsoleImport("Введите количество строк(y): ");
+Console.WriteLine();
+int[,] result = SumMatrix(FillMatrix(CreateMatrix(columns, rows)));
+Console.WriteLine();
+Console.WriteLine(max + 1);
 
-int m, n, range;
+int[,] SumMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        int rowResult = 0;
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+
+            rowResult = rowResult + matrix[i, j];
+        }
+        if (rowResult > sumLine)
+        {
+            sumLine = rowResult;
+            max = i;
+        }
+    }
+    return matrix;
+}
+
+
+
+
+
 
 int ConsoleImport(string input)
 {
@@ -24,62 +55,45 @@ int ConsoleImport(string input)
     while (result == false);
     return x;
 }
-
-int SumElements(int[,] array, int i)
+int[,] CreateMatrix(int columns, int rows)
 {
-  int sumonline = array[i,0];
-  for (int j = 1; j < array.GetLength(1); j++)
-  {
-    sumonline += array[i,j];
-  }
-  return sumonline;
+    int[,] matrix = new int[rows, columns];
+    return matrix;
 }
 
-void CreateArray(int[,] array)
+// Метод заполнения двумерной матрицы
+int[,] FillMatrix(int[,] matrix)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-      array[i, j] = new Random().Next(range);
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = rnd.Next(1, 10);
+            Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
+        }
+        Console.WriteLine();
+        Thread.Sleep(100);
     }
-  }
+    return matrix;
 }
 
-void WriteArray (int[,] array)
+// Метод печати двумерной матрицы
+int[,] PrintMatrix(int[,] matrix)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-      Console.Write(array[i,j] + " ");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
+        }
+        Console.WriteLine();
+        Thread.Sleep(100);
     }
-    Console.WriteLine();
-  }
+    return matrix;
 }
 
-Console.WriteLine("Введите размер массива m x n и диапазон случайных значений:");
-m = ConsoleImport("Введите m: ");
-n = ConsoleImport("Введите n: ");
-range = ConsoleImport("Введите диапазон: от 1 до ");
-
-int[,] array = new int[m, n];
-CreateArray(array);
-WriteArray(array);
-
-int minsum = 0;
-int sumonline = SumElements(array, 0);
-
-for (int i = 1; i < array.GetLength(0); i++)
-{
-  int TempSum = SumElements(array, i);
-  if (sumonline > TempSum)
-  {
-    sumonline = TempSum;
-    minsum = i;
-  }
-}
-
-Console.WriteLine($"\nСтрока с наименьшей суммой элементов: {minsum+1}. Сумма = {sumonline} ");
 
 

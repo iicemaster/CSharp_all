@@ -71,7 +71,6 @@ int[,] SortMatrix(int[,] matrix)
                 {
                     (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
                 }
-               
             }
         }   
     }
