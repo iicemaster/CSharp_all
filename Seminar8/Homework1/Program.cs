@@ -56,7 +56,7 @@ Console.Write("Введите количество строк(y): ");
 int rows = ConsoleImport();
 Console.WriteLine();
 //Console.WriteLine($"Ваше число x: {x}, y: {y}");
-int[,] result = SortMatrix(FillMatrix(CreateMatrix(columns, rows)));
+int[,] result = PrintMatrix(SortMatrix(FillMatrix(CreateMatrix(columns, rows))));
 
 
 int[,] SortMatrix(int[,] matrix)
@@ -72,9 +72,9 @@ int[,] SortMatrix(int[,] matrix)
                 {
                     (matrix[i, j], matrix[i, j - 1]) = (matrix[i, j - 1], matrix[i, j]);
                 }
-                Console.Write($"{matrix[i, j]} ");
+               // Console.Write($"{matrix[i, j]} "); //отладка, удалится в конце
             }
-            Console.WriteLine();
+            //Console.WriteLine(); //отладка, удалится в конце
 
         }
         
@@ -83,3 +83,17 @@ int[,] SortMatrix(int[,] matrix)
 }
 
 
+int [,] PrintMatrix(int[,] matrix)
+{
+for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
+        }
+        Console.WriteLine();
+        Thread.Sleep(100);
+    }
+    return matrix;
+}
