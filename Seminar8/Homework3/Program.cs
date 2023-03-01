@@ -1,8 +1,40 @@
 ﻿// Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
-int ConsoleImport(string input)
+
+
+// Тело задания
+Console.Write("Введите количество столбцов(x): ");
+int columns = ConsoleImport();
+Console.WriteLine();
+Console.Write("Введите количество строк(y): ");
+int rows = ConsoleImport();
+Console.WriteLine();
+int[,] matrix1 = PrintMatrix(FillMatrix(CreateMatrix(columns, rows)));
+Console.WriteLine();
+int[,] matrix2 = PrintMatrix(FillMatrix(CreateMatrix(columns, rows)));
+Console.WriteLine();
+int[,] matrix3 = CreateMatrix(columns, rows);
+matrix3 = PrintMatrix(MultiplierMatrix(matrix1, matrix2));
+
+// Метод произведения двух матриц
+int[,] MultiplierMatrix(int[,] matrix1, int[,] matrix2)
 {
-    Console.Write(input);
+    for (int count = 0; count < columns; count++)
+    {
+        for (int i = 0; i < matrix1.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix1.GetLength(1); j++)
+            {
+                matrix3[i,j] = matrix1[i,j] * matrix2[i,j];
+            }
+        }   
+    }
+    return matrix3;
+}
+
+// Метод получения данных из консоли формата int32
+int ConsoleImport()
+{
     bool result;
     int x;
     do
@@ -15,61 +47,43 @@ int ConsoleImport(string input)
     return x;
 }
 
-
-void FillArrayRandom(int[,] array)
+// Метод создания двумерной матрицы
+int[,] CreateMatrix(int columns, int rows)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().Next(1, 10);
-        }
-    }
+    int[,] matrix = new int[rows, columns];
+    return matrix;
 }
 
-void PrintArray2D(int[,] array)
+// Метод заполнения двумерной матрицы
+int[,] FillMatrix(int[,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j]} ");
+            matrix[i, j] = rnd.Next(1, 10);
+            //Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
+        }
+        //Console.WriteLine();
+        Thread.Sleep(100);
+    }
+    return matrix;
+}
+
+// Метод печати двумерной матрицы
+int [,] PrintMatrix(int[,] matrix)
+{
+for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]} ");
+            Thread.Sleep(100);
         }
         Console.WriteLine();
+        Thread.Sleep(100);
     }
+    return matrix;
 }
-
-Console.Clear();
-Console.WriteLine();
-int rows = ConsoleImport("Введите количество строк: ");
-int columns = ConsoleImport("Введите количество столбцов: ");
-int[,] array = new int[rows, columns];
-int[,] secondArray = new int[rows, columns];
-int[,] resultArray = new int[rows, columns];
-
-FillArrayRandom(array);
-PrintArray2D(array);
-
-Console.WriteLine();
-
-FillArrayRandom(secondArray);
-PrintArray2D(secondArray);
-
-if (array.GetLength(0) != secondArray.GetLength(1))
-{
-    Console.WriteLine(" Нельзя перемножить ");
-    return;
-}
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < secondArray.GetLength(1); j++)
-    {
-        resultArray[i, j] = 0;
-        for (int k = 0; k < array.GetLength(1); k++)
-        {
-            resultArray[i, j] += array[i, k] * secondArray[k, j];
-        }
-    }
-}
-Console.WriteLine("\nРезультат произоведения:\n");
-PrintArray2D(resultArray);
