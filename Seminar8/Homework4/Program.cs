@@ -5,10 +5,27 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
+using System.Linq;
 
-int ConsoleImport(string input)
+// Тело задания
+Console.Write("Введите количество столбцов(x): ");
+int columns = ConsoleImport();
+Console.WriteLine();
+Console.Write("Введите количество строк(y): ");
+int rows = ConsoleImport();
+Console.Write("Введите количество строк(z): ");
+int zet = ConsoleImport();
+Console.WriteLine();
+// int[,] matrix1 = PrintMatrix(FillMatrix(CreateMatrix(columns, rows)));
+// Console.WriteLine();
+// int[,] matrix2 = PrintMatrix(FillMatrix(CreateMatrix(columns, rows)));
+// Console.WriteLine();
+int[,,] matrix = FillMatrix(CreateMatrix(columns, rows, zet));
+// matrix3 = PrintMatrix(MultiplierMatrix(matrix1, matrix2));
+
+// Метод получения данных из консоли формата int32
+int ConsoleImport()
 {
-    Console.Write(input);
     bool result;
     int x;
     do
@@ -21,60 +38,57 @@ int ConsoleImport(string input)
     return x;
 }
 
-int x = ConsoleImport("Введите значение по x : ");
-int y = ConsoleImport("Введите значение по y : ");
-int z = ConsoleImport("Введите значение по z : ");
-
-int[,,] array3D = new int[x, y, z];
-CreateArray(array3D);
-PrintNumber(array3D);
-void CreateArray(int[,,] array3D)
+// Метод создания трёхмерной матрицы
+int[,,] CreateMatrix(int columns, int rows, int zet)
 {
-  int[] temp = new int[array3D.GetLength(0) * array3D.GetLength(1) * array3D.GetLength(2)];
-  int  number;
-  for (int i = 0; i < temp.GetLength(0); i++)
-  {
-    temp[i] = new Random().Next(10, 99);
-    number = temp[i];
-    if (i >= 1)
-    {
-      for (int j = 0; j < i; j++)
-      {
-        while (temp[i] == temp[j])
-        {
-          temp[i] = new Random().Next(10, 99);
-          j = 0;
-          number = temp[i];
-        }
-          number = temp[i];
-      }
-    }
-  }
-  int count = 0; 
-  for (int x = 0; x < array3D.GetLength(0); x++)
-  {
-    for (int y = 0; y < array3D.GetLength(1); y++)
-    {
-      for (int z = 0; z < array3D.GetLength(2); z++)
-      {
-        array3D[x, y, z] = temp[count];
-        count++;
-      }
-    }
-  }
+    int[,,] matrix = new int[rows, columns, zet];
+    return matrix;
 }
-void PrintNumber(int[,,] array)
+
+// Метод заполнения трёхмерной матрицы
+int[,,] FillMatrix(int[,,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int z = 0; z < matrix.GetLength(2); z++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            for (int k = 0; k < array.GetLength(2); k++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                Console.Write($"{array[i,j,k]} ({i},{j},{k})");
+                matrix[i, j, z] = NewNumber(matrix);
+                Console.Write($"{matrix[i, j, z]}({i},{j},{z}) ");
+                Thread.Sleep(100);
             }
+            Console.WriteLine();
+            Thread.Sleep(100);
         }
-        Console.WriteLine();
     }
-
+    return matrix;
 }
+
+//Проверка каждого элемента массива
+int NewNumber(int[,,] matrix)
+{
+    Random rnd = new Random();
+    int randomNum = rnd.Next(10, 99);
+    foreach (int number in matrix)
+    {
+        if (number == randomNum)
+        {
+            //Console.Write("!");
+            randomNum = NewNumber(matrix);
+        }
+    }
+    return randomNum;
+}
+
+// int NewNumber(int[,,] matrix)
+// {
+// Random rnd = new Random();
+// int randomNum = rnd.Next(10, 99);
+// if (matrix.Contains(randomNum))
+// {
+//     Console.WriteLine(string.Format("Слово '{0}' содержится в массиве", name));
+//     // to do something...
+// }
+// return randomNum;
+// }
