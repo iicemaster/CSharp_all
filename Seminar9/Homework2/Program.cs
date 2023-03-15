@@ -49,6 +49,4 @@ void NaturalNumbers(int numberM, int numberN)
         result += numberM;
         Console.WriteLine($"Сумма натуральных числен в промежутке между {m} и {n} (Включительно): {result}");
     }
-
-
 }
