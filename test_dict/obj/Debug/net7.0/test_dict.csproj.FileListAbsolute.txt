@@ -1,0 +1,15 @@
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.csproj.AssemblyReference.cache
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.AssemblyInfoInputs.cache
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.AssemblyInfo.cs
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.csproj.CoreCompileInputs.cache
+C:\GitEducation\CSharp_all\test_dict\bin\Debug\net7.0\test_dict.exe
+C:\GitEducation\CSharp_all\test_dict\bin\Debug\net7.0\test_dict.deps.json
+C:\GitEducation\CSharp_all\test_dict\bin\Debug\net7.0\test_dict.runtimeconfig.json
+C:\GitEducation\CSharp_all\test_dict\bin\Debug\net7.0\test_dict.dll
+C:\GitEducation\CSharp_all\test_dict\bin\Debug\net7.0\test_dict.pdb
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.dll
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\refint\test_dict.dll
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.pdb
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\test_dict.genruntimeconfig.cache
+C:\GitEducation\CSharp_all\test_dict\obj\Debug\net7.0\ref\test_dict.dll
